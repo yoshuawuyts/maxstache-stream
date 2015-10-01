@@ -1,0 +1,35 @@
+{
+  "name": "minstache-stream",
+  "version": "1.0.0",
+  "description": "Minstache transform stream",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/minstache-stream",
+  "keywords": [
+    "minstache",
+    "variable",
+    "stream",
+    "inject",
+    "template"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "minstache": "^1.2.0",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.5.0",
+    "dependency-check": "^2.5.1",
+    "from2-string": "^1.1.0",
+    "istanbul": "^0.3.21",
+    "tape": "^4.2.0"
+  },
+  "files": [
+    "index.js",
+    "bin/*"
+  ]
+}
