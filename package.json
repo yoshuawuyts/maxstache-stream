@@ -1,6 +1,6 @@
 {
   "name": "maxstache-stream",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Maxstache transform stream",
   "main": "index.js",
   "scripts": {
