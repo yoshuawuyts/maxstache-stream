@@ -28,7 +28,7 @@ Create a maxstache transform stream that injects an object of variables. Uses
 the `{{varName}}` syntax to mark variables in templates.
 
 ## See Also
-- [maxstache-stream][1]
+- [maxstache][0]
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
