@@ -27,6 +27,9 @@ fs.createReadStream('./foobar.txt')
 Create a maxstache transform stream that injects an object of variables. Uses
 the `{{varName}}` syntax to mark variables in templates.
 
+## See Also
+- [maxstache-stream][1]
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 
@@ -42,3 +45,4 @@ the `{{varName}}` syntax to mark variables in templates.
 [standard-url]: https://github.com/feross/standard
 
 [0]: https://github.com/yoshuawuyts/maxstache
+[1]: https://github.com/yoshuawuyts/maxstache-stream
