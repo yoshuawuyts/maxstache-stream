@@ -5,6 +5,9 @@
 [![Downloads][downloads-image]][downloads-url]
 [![js-standard-style][standard-image]][standard-url]
 
+This module is republished as
+[maxstache-stream](https://github.com/yoshuawuyts/maxstache-stream)
+
 [minstache][0] transform stream. Faster and simpler than `mustache`.
 
 ## Installation
