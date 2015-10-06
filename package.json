@@ -1,16 +1,16 @@
 {
-  "name": "minstache-stream",
+  "name": "maxstache-stream",
   "version": "1.0.1",
-  "description": "Minstache transform stream",
+  "description": "Maxstache transform stream",
   "main": "index.js",
   "scripts": {
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
     "test": "standard && npm run deps && NODE_ENV=test node test",
     "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
   },
-  "repository": "yoshuawuyts/minstache-stream",
+  "repository": "yoshuawuyts/maxstache-stream",
   "keywords": [
-    "minstache",
+    "maxstache",
     "variable",
     "stream",
     "inject",
@@ -18,7 +18,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "minstache": "^1.2.0",
+    "maxstache": "^1.0.0",
     "through2": "^2.0.0"
   },
   "devDependencies": {

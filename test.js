@@ -2,11 +2,11 @@ const fromString = require('from2-string')
 const concat = require('concat-stream')
 const test = require('tape')
 
-const minstache = require('./')
+const maxstache = require('./')
 
 test('should assert input types', function (t) {
   t.plan(1)
-  t.throws(minstache.bind(null, 'foo'))
+  t.throws(maxstache.bind(null, 'foo'))
 })
 
 test('should transform a bunch of text', function (t) {
@@ -17,7 +17,7 @@ test('should transform a bunch of text', function (t) {
   ].join('\n')
 
   fromString(template)
-    .pipe(minstache({ name: 'foo', person: 'bar' }))
+    .pipe(maxstache({ name: 'foo', person: 'bar' }))
     .pipe(concat(sink))
 
   function sink (str) {
@@ -38,7 +38,7 @@ test('should pipe through a bunch of text', function (t) {
   ].join('\n')
 
   fromString(template)
-    .pipe(minstache())
+    .pipe(maxstache())
     .pipe(concat(sink))
 
   function sink (str) {

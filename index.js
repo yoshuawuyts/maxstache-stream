@@ -1,17 +1,17 @@
-const minstache = require('minstache')
+const maxstache = require('maxstache')
 const through = require('through2')
 const assert = require('assert')
 
-module.exports = minstacheStream
+module.exports = maxstacheStream
 
-// Minstache transform stream
+// Maxstache transform stream
 // obj? -> null
-function minstacheStream (args) {
+function maxstacheStream (args) {
   args = args || {}
   assert.equal(typeof args, 'object')
 
   return through(function (chunk, enc, cb) {
     const str = String(chunk)
-    cb(null, minstache(str, args))
+    cb(null, maxstache(str, args))
   })
 }
