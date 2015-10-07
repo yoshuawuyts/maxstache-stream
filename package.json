@@ -19,6 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "maxstache": "^1.0.0",
+    "pump": "^1.0.0",
+    "split2": "^1.0.0",
     "through2": "^2.0.0"
   },
   "devDependencies": {
